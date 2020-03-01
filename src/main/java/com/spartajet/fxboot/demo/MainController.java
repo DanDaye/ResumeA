@@ -34,5 +34,6 @@ public class MainController extends AbstractJavaFxApplicationSupport {
     @Override
     public void start(Stage stage) throws Exception {
         super.start(stage);
+        stage.setTitle("简历处理");
     }
 }
