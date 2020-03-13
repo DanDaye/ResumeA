@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="resume-analysis" target="1.5" />
+      <module name="resume-analysis" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

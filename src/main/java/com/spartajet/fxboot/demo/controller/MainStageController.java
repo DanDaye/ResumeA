@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -22,6 +23,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @create 2017-05-20 下午1:55
  * @email spartajet.guo@gmail.com
  */
+@SuppressWarnings("checkstyle:JavadocType")
 @FXMLController
 public class MainStageController implements Initializable {
     @FXML
@@ -66,9 +68,9 @@ public class MainStageController implements Initializable {
      }
     //
     @FXML
-    public void startClick(ActionEvent actionEvent) {
+    public void startClick(ActionEvent actionEvent) throws IOException {
         System.out.println("btn click");
-
+        fileServices.extraInformation("");
     }
 
     @FXML

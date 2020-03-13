@@ -57,6 +57,23 @@
             <scope>system</scope>
             <systemPath>${basedir}/lib/Spire.Doc.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+
         <!-- 注解-->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -84,6 +101,14 @@
                 <configuration>
                     <mainClass>com.spartajet.fxboot.demo.MainController</mainClass>
                     <vendor>Spartajet</vendor>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
         </plugins>
